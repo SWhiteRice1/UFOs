@@ -59,23 +59,9 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    for (var key in filters) {
-      if (key =='datetime') {
-        filteredData = filteredData.filter(row => row.datetime === filters[key]);
-      }
-      else if (key =='city') {
-        filteredData = filteredData.filter(row => row.city === filters[key]);
-      }
-      else if (key =='state') {
-        filteredData = filteredData.filter(row => row.state === filters[key]);
-      }
-      else if (key =='country') {
-        filteredData = filteredData.filter(row => row.country === filters[key]);
-      }
-      else if (key =='shape') {
-        filteredData = filteredData.filter(row => row.shape === filters[key]);
-      }
-      }
+     Object.entries(filters).forEach(([key, value]) => {
+      filteredData = filteredData.filter(row => row[key] === value);
+     });
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
   }

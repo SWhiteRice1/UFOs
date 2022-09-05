@@ -8,9 +8,9 @@ The purpose of this project was to create a webpage to filter data on UFOs. Data
 
 ## Results
 To perform a search of the data, you can use the the five filters as seen belo.
-```
-<img src="[Screen Shot 2022-09-05 at 12.40.59 PM.png](https://github.com/SWhiteRice1/UFOs/blob/5dc7b2547b030e2ad0cbfeb4fc573a928d9f7508/static/css/images/Screen%20Shot%202022-09-05%20at%2012.40.59%20PM.png)">
-```
+
+<img src="[Screen Shot 2022-09-05 at 12.40.59 PM.png](https://github.com/SWhiteRice1/UFOs/blob/5dc7b2547b030e2ad0cbfeb4fc573a928d9f7508/static/css/images/Screen%20Shot%202022-09-05%20at%2012.40.59%20PM.png)" width=50% height=50%>
+
 By typing in value for one of the five filters, the table will automatically populate the data.
 
  ## Challenge Summary

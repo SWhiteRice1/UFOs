@@ -30,7 +30,7 @@ var filters ={};
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-    let element = ds.select(this);
+    let element = d3.select(this);
     // 4b. Save the value that was changed as a variable.
     let elementValue= element.property('value');
     console.log(elementValue);
@@ -60,19 +60,19 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
     for (var key in filters) {
-      if (key ==='datetime') {
+      if (key =='datetime') {
         filteredData = filteredData.filter(row => row.datetime === filters[key]);
       }
-      else if (key ==='city') {
+      else if (key =='city') {
         filteredData = filteredData.filter(row => row.city === filters[key]);
       }
-      else if (key ==='state') {
+      else if (key =='state') {
         filteredData = filteredData.filter(row => row.state === filters[key]);
       }
-      else if (key ==='country') {
+      else if (key =='country') {
         filteredData = filteredData.filter(row => row.country === filters[key]);
       }
-      else if (key ==='shape') {
+      else if (key =='shape') {
         filteredData = filteredData.filter(row => row.shape === filters[key]);
       }
       }
